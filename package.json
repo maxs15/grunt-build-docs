@@ -1,0 +1,32 @@
+{
+  "name": "grunt-build-docs",
+  "description": "Build documentations using YUIDOC",
+  "version": "0.4.0rc7",
+  "homepage": "https://github.com/maxs15/grunt-build-docs",
+  "author": {
+    "name": "Maxime Mezrahi",
+    "url": "http://github.com/maxs15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maxs15/grunt-build-docs.git"
+  },
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "yuidocjs": "~0.3.14",
+    "ejs": "~0.8.3"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "0.1.1rc6",
+    "grunt-contrib-nodeunit": "0.1.2rc6",
+    "grunt-contrib-clean": "0.4.0rc6",
+    "grunt": "0.4.0rc7"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "readmeFilename": "README.md"
+}
