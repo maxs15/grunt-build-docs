@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 		wrench.copyDirSyncRecursive(mod_path + themePath, docPath);
 		wrench.rmdirSyncRecursive(docPath + "/layouts", true);
 		grunt.file.write(docPath + "/index.html", content);
-	}
+	};
 
 	grunt.registerMultiTask('docs', 'Create the docs, only a component if specified.\nExample: docs:componentName', function() {
 
@@ -124,18 +124,19 @@ module.exports = function(grunt) {
 			{
 				createDoc(options, components[i], docFinished);
 			}
-		}
+		};
 
 		// Create the index.html than links all the documentions if specified
 		if (options.indexdir) {
 			console.log("creating index..");
 			if (!options.indextheme) {
-				options.indextheme = "themes/simpleIndex"
+				options.indextheme = "themes/simpleIndex";
 			}
 			createIndexDoc(components, options.indexdir, options.indextheme, options.project);
 		}
-		else
+		else {
 			console.log("not creatring index..");
+		}
 		
 		startCreation();
 
