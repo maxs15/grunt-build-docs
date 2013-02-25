@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 		grunt.file.write(docPath + "/index.html", content);
 	};
 
-	grunt.registerMultiTask('docs', 'Create the docs, only a component if specified.\nExample: docs:componentName', function() {
+	grunt.registerMultiTask('docs', 'Generate the documentations.', function() {
 
 		var target = grunt.option("target");
 
