@@ -56,7 +56,7 @@ options: {
 }
 ```
 
-Second possibility: Create commun documentation
+Second possibility: Create a commun documentation (Because the dest is the same for all directories)
 
 ```js
 docs: {
