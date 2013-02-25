@@ -134,9 +134,6 @@ module.exports = function(grunt) {
 			}
 			createIndexDoc(components, options.indexdir, options.indextheme, options.project);
 		}
-		else {
-			console.log("not creatring index..");
-		}
 		
 		startCreation();
 
